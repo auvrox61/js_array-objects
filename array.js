@@ -1,0 +1,26 @@
+let fruits=["Apple","Banana","Mango"];
+
+console.log(fruits);
+console.log(fruits[1]);
+fruits.unshift("Kiwi");
+console.log(fruits);
+fruits.push("Grapes");
+console.log(fruits);
+fruits.shift();
+console.log(fruits);
+fruits.pop();
+console.log(fruits);
+fruits.unshift("Kiwi");
+fruits.push("Grapes");
+console.log(fruits);
+let sliced=fruits.slice(1,3);
+console.log(sliced);
+fruits.splice(1,0,"Jackfruit");
+console.log(fruits);
+console.log(fruits.includes("Jackfruit"));
+console.log(fruits.indexOf("Mango"));
+console.log(fruits.join(','));
+let lengths=fruits.map(fruit=>fruit.length);
+console.log(lengths);
+let longNames=fruits.filter(fruit=>(fruit.length)>4);
+console.log(longNames);
